@@ -59,7 +59,7 @@ time.sleep(7)
 print ("What Armor type do you want", name, race_choice, class_choice, "to be?")
 armor_choice = input()
 print ("You have chosen your", race_choice, class_choice, name, "to wear", armor_choice, "Armor!")
-#Program ask you to pick your armor type
+#Program ask you to pick your armor color
 time.sleep(4)
 print ("Next is to pick your character's armor color")
 print ("The Following are Armor Colors available:")
