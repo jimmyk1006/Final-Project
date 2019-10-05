@@ -1,3 +1,4 @@
+#Intro to my program of Character Creation
 print ("This is a Character Creation Program, Please read the following:")
 
 print ("Character Creation Involves making a Character of your Choose")
@@ -7,10 +8,12 @@ print ("Character Creation program will allow pick options and make a toon based
 print ("Please Read all Questions and Instructions Carefully, Hope you enjoy")
 import time
 time.sleep(1)
+#Program asks to pick your name
 name = input("What is your character's name?: ")
 print ("You have named your character:")
 print (name)
 time.sleep(4)
+#Program asks to pick your class
 print ("Next is to pick your character's class")
 print ("The Following are Character Classes:")
 print ("Warrior")
@@ -28,6 +31,7 @@ elif class_choice == 'Warrior':
 else:
     print ("Please Choose, Mage, Druid, or Warrior")
 time.sleep(5)
+#Program asks to pick your race
 print ("Next is to pick your character's race")
 print ("The Following are Character Races:")
 print ("Night Elf")
@@ -44,3 +48,28 @@ elif race_choice == 'Worgen':
     print ("You have chosen", name, "to be an", race_choice, class_choice)
 else:
     print ("Please Choose, Night Elf, Orc, or Worgen")
+#Program ask you to pick your armor type
+time.sleep(4)
+print ("Next is to pick your character's armor")
+print ("The Following are Armor Types available:")
+print ("Cloth")
+print ("Leather")
+print ("Plate")
+time.sleep(7)
+print ("What Armor type do you want", name, race_choice, class_choice, "to be?")
+armor_choice = input()
+print ("You have chosen your", race_choice, class_choice, name, "to wear", armor_choice, "Armor!")
+#Program ask you to pick your armor type
+time.sleep(4)
+print ("Next is to pick your character's armor color")
+print ("The Following are Armor Colors available:")
+print ("Red")
+print ("Blue")
+print ("Orange")
+print ("Pink")
+print ("Purple")
+print ("Black")
+time.sleep(7)
+print ("What color type do you want your armor to be?")
+armor_color= input()
+print ("You have chosen your", race_choice, class_choice, name, "to wear", armor_color, armor_choice, "Armor!")
