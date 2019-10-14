@@ -73,3 +73,34 @@ time.sleep(7)
 print ("What color type do you want your armor to be?")
 armor_color= input()
 print ("You have chosen your", race_choice, class_choice, name, "to wear", armor_color, armor_choice, "Armor!")
+#Program assings your weapon for you but allows you to choose an special ability for that class
+time.sleep(4)
+print ("Next is to pick your character's weapon special ability")
+if class_choice == 'Mage':
+    print ("By default Mage Class is assigned a Wand as a weapon")
+    print ("The following are special abilities for the Wand Weapon:")
+    print ("Ice burst, Which cast a huge ice burst against the enemy for 100 hitpoints"
+           "and freezes the enemy in place for 15 seconds")
+    print ("Fire Ball, Which cast an gigantic fire ball against the enemy for 100 hitpoints "
+           "and burns the enemy for 10 seconds for 10 Hitpoints each second")
+    mageabil = input("Please choose Ice burst or Fire ball: ")
+    print ("You have assigned your", race_choice, class_choice, name, mageabil, "special ability")
+elif class_choice == 'Druid':
+    print ("By default Druid Class is assigned a Staff as a weapon")
+    print ("The following are special abilities for the Staff Weapon:")
+    print ("Moon Fire, Which cast a huge Moon Blast against the enemy for 100 hitpoints"
+           "and burns the enemy for 10 seconds for 10 Hitpoints each second")
+    print ("Star Fall, Which cast an rift of Stars onto your team, healing them for 100 hitpoints")
+    druidabil = input("Please choose Moon Fire or Star Fall: ")
+    print ("You have assigned your", race_choice, class_choice, name, druidabil, "special ability")
+elif class_choice == 'Warrior':
+    print ("By default Warrior Class is assigned a Sword as a weapon")
+    print ("The following are special abilities for the Sword Weapon:")
+    print ("Bladestorm, Which brings your Warrior into a frenzy hitting all enemies for 125 hitpoints")
+    print ("Rend, Slices your enemy for 125 hitpoints and causes the enemy to bleed for 10 hit points every second for 10 seconds")
+    warriorabil = input("Please choose Bladestorm or Rend: ")
+    print ("You have assigned your", race_choice, class_choice, name, warriorabil, "special ability")
+else:
+    print ("Please Try Again")
+
+
