@@ -78,26 +78,38 @@ time.sleep(4)
 print ("Next is to pick your character's weapon special ability")
 if class_choice == 'Mage':
     print ("By default Mage Class is assigned a Wand as a weapon")
+    time.sleep(4)
     print ("The following are special abilities for the Wand Weapon:")
+    time.sleep(4)
     print ("Ice burst, Which cast a huge ice burst against the enemy for 100 hitpoints"
            "and freezes the enemy in place for 15 seconds")
+    time.sleep(4)
     print ("Fire Ball, Which cast an gigantic fire ball against the enemy for 100 hitpoints "
            "and burns the enemy for 10 seconds for 10 Hitpoints each second")
+    time.sleep(4)
     mageabil = input("Please choose Ice burst or Fire ball: ")
     print ("You have assigned your", race_choice, class_choice, name, mageabil, "special ability")
 elif class_choice == 'Druid':
     print ("By default Druid Class is assigned a Staff as a weapon")
+    time.sleep(4)
     print ("The following are special abilities for the Staff Weapon:")
+    time.sleep(4)
     print ("Moon Fire, Which cast a huge Moon Blast against the enemy for 100 hitpoints"
            "and burns the enemy for 10 seconds for 10 Hitpoints each second")
+    time.sleep(4)
     print ("Star Fall, Which cast an rift of Stars onto your team, healing them for 100 hitpoints")
+    time.sleep(4)
     druidabil = input("Please choose Moon Fire or Star Fall: ")
     print ("You have assigned your", race_choice, class_choice, name, druidabil, "special ability")
 elif class_choice == 'Warrior':
     print ("By default Warrior Class is assigned a Sword as a weapon")
+    time.sleep(4)
     print ("The following are special abilities for the Sword Weapon:")
+    time.sleep(4)
     print ("Bladestorm, Which brings your Warrior into a frenzy hitting all enemies for 125 hitpoints")
+    time.sleep(4)
     print ("Rend, Slices your enemy for 125 hitpoints and causes the enemy to bleed for 10 hit points every second for 10 seconds")
+    time.sleep(4)
     warriorabil = input("Please choose Bladestorm or Rend: ")
     print ("You have assigned your", race_choice, class_choice, name, warriorabil, "special ability")
 else:
