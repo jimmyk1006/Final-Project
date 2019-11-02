@@ -3,15 +3,33 @@ print ("This is a Character Creation Program, Please read the following:")
 
 print ("Character Creation Involves making a Character of your Choose")
 
-print ("Character Creation program will allow pick options and make a toon based on your inputs")
+print ("Character Creation program will allow you to pick options and will make a character based on your inputs")
 
 print ("Please Read all Questions and Instructions Carefully, Hope you enjoy")
 import time
+import random
 time.sleep(1)
 #Program asks to pick your name
-name = input("What is your character's name?: ")
-print ("You have named your character:")
-print (name)
+print ("First thing is to choose your Character's name!")
+time.sleep(2)
+name_choice = input("Do you want to come up with your own name for your character or use the random name picker?"
+             " Please type my own or random?")
+if name_choice == 'my own':
+    print ("What is your character's name?: ")
+    name = input('')
+    print ("You have named your character:")
+    print (name)
+elif name_choice == 'random':
+    names = [
+    "Warford" ,"Oxton" ,"Sinan" ,"Mason" ,"Sigwald" ,"Deangelo" ,"Bertram" ,"Malvin" ,"Elijah" ,"Cearbhall" ,"Alexander" ,"Vico" ,
+    "Prerue" ,"Galiena" ,"Blanca" ,"Gatty" ,"Cherise" ,"Anuschka" ,"Eartha" ,"Joseph" ,"Natalii" ,"Becky" ,"Maryam" ,"Sebastian" ,
+    "Gabriel" ,"Carter" ,"Jayden" ,"Wilfreida" ,"Krimlo" ,"Licko"]
+    idx = random.randint(0, len(names) - 1)
+    name = (names[idx])
+    print ("You have named your character:")
+    print (name)
+else:
+    print ('Try Again')
 time.sleep(4)
 #Program asks to pick your class
 print ("Next is to pick your character's class")
@@ -81,26 +99,26 @@ if class_choice == 'Mage':
     time.sleep(4)
     print ("The following are special abilities for the Wand Weapon:")
     time.sleep(4)
-    print ("Ice burst, Which cast a huge ice burst against the enemy for 100 hitpoints"
-           "and freezes the enemy in place for 15 seconds")
+    print ("Ice burst, Which cast a huge ice burst against the enemy for 100 hit points"
+           " and freezes the enemy in place for 15 seconds")
     time.sleep(4)
-    print ("Fire Ball, Which cast an gigantic fire ball against the enemy for 100 hitpoints "
-           "and burns the enemy for 10 seconds for 10 Hitpoints each second")
+    print ("Fire Ball, Which cast an gigantic fire ball against the enemy for 100 hit points "
+           " and burns the enemy for 10 seconds for 10 Hitpoints each second")
     time.sleep(4)
     mageabil = input("Please choose Ice burst or Fire ball: ")
-    print ("You have assigned your", race_choice, class_choice, name, mageabil, "special ability")
+    print ("You have assigned your", race_choice, class_choice, name, "the", mageabil, "special ability")
 elif class_choice == 'Druid':
     print ("By default Druid Class is assigned a Staff as a weapon")
     time.sleep(4)
     print ("The following are special abilities for the Staff Weapon:")
     time.sleep(4)
-    print ("Moon Fire, Which cast a huge Moon Blast against the enemy for 100 hitpoints"
-           "and burns the enemy for 10 seconds for 10 Hitpoints each second")
+    print ("Moon Fire, Which cast a huge Moon Blast against the enemy for 100 hit points"
+           " and burns the enemy for 10 seconds for 10 hit points each second")
     time.sleep(4)
-    print ("Star Fall, Which cast an rift of Stars onto your team, healing them for 100 hitpoints")
+    print ("Star Fall, Which cast an rift of Stars onto your team, healing them for 100 hit points")
     time.sleep(4)
     druidabil = input("Please choose Moon Fire or Star Fall: ")
-    print ("You have assigned your", race_choice, class_choice, name, druidabil, "special ability")
+    print ("You have assigned your", race_choice, class_choice, name, "the", druidabil, "special ability")
 elif class_choice == 'Warrior':
     print ("By default Warrior Class is assigned a Sword as a weapon")
     time.sleep(4)
@@ -111,7 +129,7 @@ elif class_choice == 'Warrior':
     print ("Rend, Slices your enemy for 125 hitpoints and causes the enemy to bleed for 10 hit points every second for 10 seconds")
     time.sleep(4)
     warriorabil = input("Please choose Bladestorm or Rend: ")
-    print ("You have assigned your", race_choice, class_choice, name, warriorabil, "special ability")
+    print ("You have assigned your", race_choice, class_choice, name, "the", warriorabil, "special ability")
 else:
     print ("Please Try Again")
 
