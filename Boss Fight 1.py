@@ -8,4 +8,5 @@ print ("You will be fighting Gruul the Dragonslayer, as his name implies, he is 
        " dragon-slayer, killing all dragons in sight.")
 time.sleep(2)
 print ("Please Read all Questions and Instructions Carefully, Hope you enjoy")
+import ToonCreator
 
