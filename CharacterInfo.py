@@ -1,0 +1,5 @@
+name = 'Carter'
+race_choice = 'Orc'
+class_choice = 'Mage'
+armor_color = 'Black'
+specialabil = 'Fire ball'
