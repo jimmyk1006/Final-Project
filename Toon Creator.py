@@ -105,8 +105,8 @@ if class_choice == 'Mage':
     print ("Fire Ball, Which cast an gigantic fire ball against the enemy for 100 hit points "
            " and burns the enemy for 10 seconds for 10 Hitpoints each second")
     time.sleep(4)
-    mageabil = input("Please choose Ice burst or Fire ball: ")
-    print ("You have assigned your", race_choice, class_choice, name, "the", mageabil, "special ability")
+    specialabil = input("Please choose Ice burst or Fire ball: ")
+    print ("You have assigned your", race_choice, class_choice, name, "the", specialabil, "special ability")
 elif class_choice == 'Druid':
     print ("By default Druid Class is assigned a Staff as a weapon")
     time.sleep(4)
@@ -117,8 +117,8 @@ elif class_choice == 'Druid':
     time.sleep(4)
     print ("Star Fall, Which cast an rift of Stars onto your team, healing them for 100 hit points")
     time.sleep(4)
-    druidabil = input("Please choose Moon Fire or Star Fall: ")
-    print ("You have assigned your", race_choice, class_choice, name, "the", druidabil, "special ability")
+    specialabil = input("Please choose Moon Fire or Star Fall: ")
+    print ("You have assigned your", race_choice, class_choice, name, "the", specialabil, "special ability")
 elif class_choice == 'Warrior':
     print ("By default Warrior Class is assigned a Sword as a weapon")
     time.sleep(4)
@@ -128,9 +128,14 @@ elif class_choice == 'Warrior':
     time.sleep(4)
     print ("Rend, Slices your enemy for 125 hitpoints and causes the enemy to bleed for 10 hit points every second for 10 seconds")
     time.sleep(4)
-    warriorabil = input("Please choose Bladestorm or Rend: ")
-    print ("You have assigned your", race_choice, class_choice, name, "the", warriorabil, "special ability")
+    specialabil = input("Please choose Bladestorm or Rend: ")
+    print ("You have assigned your", race_choice, class_choice, name, "the", specialabil, "special ability")
 else:
     print ("Please Try Again")
-
-
+#Ending
+time.sleep(2)
+print ("Congratz you have completed your character creation!!!!")
+time.sleep(2)
+print ("You have created the following character:")
+print (name, "the", race_choice, class_choice, "wearing", armor_color, armor_choice, "armor", "with the special ability of", specialabil)
+time.sleep(2)
