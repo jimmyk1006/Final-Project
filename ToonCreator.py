@@ -113,7 +113,7 @@ if class_choice == 'Mage':
     print("Fire Ball, Which cast an gigantic fire ball against the enemy for 100 hit points "
           " and burns the enemy for 10 seconds for 10 Hitpoints each second")
     time.sleep(4)
-    specialabil = input("Please choose Ice burst or Fire ball: ")
+    specialabil = input("Please choose Ice Burst or Fire Ball: ")
     print("You have assigned your", race_choice, class_choice, name, "the", specialabil, "special ability")
 elif class_choice == 'Druid':
     print("By default Druid Class is assigned a Staff as a weapon")
@@ -157,5 +157,6 @@ f.write("name = '%s'" % name)
 f.write("\n" "race_choice = '%s'" % race_choice)
 f.write("\n" "class_choice = '%s'" % class_choice)
 f.write("\n" "armor_color = '%s'" % armor_color)
+f.write("\n" "armor_choice = '%s'" % armor_choice)
 f.write("\n" "specialabil = '%s'" % specialabil)
 f.close()
