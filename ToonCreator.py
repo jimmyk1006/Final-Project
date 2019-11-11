@@ -107,11 +107,9 @@ if class_choice == 'Mage':
     time.sleep(4)
     print("The following are special abilities for the Wand Weapon:")
     time.sleep(4)
-    print("Ice burst, Which cast a huge ice burst against the enemy for 100 hit points"
-          " and freezes the enemy in place for 15 seconds")
+    print("Ice burst, Which cast a huge ice burst against all enemies for 80 hit points")
     time.sleep(4)
-    print("Fire Ball, Which cast an gigantic fire ball against the enemy for 100 hit points "
-          " and burns the enemy for 10 seconds for 10 Hitpoints each second")
+    print("Fire Ball, Which cast an gigantic fire ball against one enemy for 100 hit points")
     time.sleep(4)
     specialabil = input("Please choose Ice Burst or Fire Ball: ")
     print("You have assigned your", race_choice, class_choice, name, "the", specialabil, "special ability")
@@ -120,10 +118,9 @@ elif class_choice == 'Druid':
     time.sleep(4)
     print("The following are special abilities for the Staff Weapon:")
     time.sleep(4)
-    print("Moon Fire, Which cast a huge Moon Blast against the enemy for 100 hit points"
-          " and burns the enemy for 10 seconds for 10 hit points each second")
+    print("Moon Fire, Which cast a huge Moon Blast against the all enemies for 80 hit points")
     time.sleep(4)
-    print("Star Fall, Which cast an rift of Stars onto your team, healing them for 100 hit points")
+    print("Star Fall, Which cast an rift of Stars onto one enemy, hitting it for 100 hit points")
     time.sleep(4)
     specialabil = input("Please choose Moon Fire or Star Fall: ")
     print("You have assigned your", race_choice, class_choice, name, "the", specialabil, "special ability")
@@ -132,10 +129,10 @@ elif class_choice == 'Warrior':
     time.sleep(4)
     print("The following are special abilities for the Sword Weapon:")
     time.sleep(4)
-    print("Bladestorm, Which brings your Warrior into a frenzy hitting all enemies for 125 hitpoints")
+    print("Bladestorm, Which brings your Warrior into a frenzy hitting all enemies for 80 hitpoints")
     time.sleep(4)
     print(
-        "Rend, Slices your enemy for 125 hitpoints and causes the enemy to bleed for 10 hit points every second for 10 seconds")
+        "Rend, Slices one enemy for 100 hitpoints.")
     time.sleep(4)
     specialabil = input("Please choose Bladestorm or Rend: ")
     print("You have assigned your", race_choice, class_choice, name, "the", specialabil, "special ability")
@@ -151,7 +148,7 @@ print(name, "the", race_choice, class_choice, "wearing", armor_color, armor_choi
       "with the special ability of", specialabil)
 time.sleep(2)
 
-#saves character info into a
+#saves character info into a seperate file
 f = open('CharacterInfo.py', 'w+')
 f.write("name = '%s'" % name)
 f.write("\n" "race_choice = '%s'" % race_choice)

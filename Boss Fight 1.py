@@ -14,6 +14,7 @@ from CharacterInfo import name, race_choice, class_choice, armor_choice, armor_c
 
 #hitpoints
 gruul_hitpoints = 1000
+grullies_hitpoints = 200
 player_hitpoints = 100
 print(name, "has", player_hitpoints, "hitpoints")
 time.sleep(2)
@@ -26,6 +27,15 @@ time.sleep(2)
 print ("What tunnel do you want walk down?")
 tunnel_choice = input("Choose Left or Right:")
 print (name, "has chosen", tunnel_choice, "tunnel...good luck")
+
+#Left Tunnel
+print ("Down the left tunnel goes", name)
+time.sleep(2)
+print (name, "gets attacked by grullies!!!")
+time.sleep(2)
+print ("Grullies have", grullies_hitpoints, "hitpoints")
+time.sleep(2)
+
 #Here I set variables for when you will use your weapons special ability
 #Ice burst
 #Fire Ball
