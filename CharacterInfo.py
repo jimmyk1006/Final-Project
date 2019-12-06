@@ -1,6 +1,6 @@
 name = 'Cherise'
 race_choice = 'Orc'
 class_choice = 'Mage'
-armor_color = 'Pink'
+armor_color = 'Blue'
 armor_choice = 'Cloth'
 specialabil = 'Ice burst'

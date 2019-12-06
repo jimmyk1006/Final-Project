@@ -11,7 +11,7 @@ print ("Please Read all Questions and Instructions Carefully, Hope you enjoy")
 
 #Here I import my variable from the Toon Creator
 from CharacterInfo import name, race_choice, class_choice, armor_choice, armor_color, specialabil
-from bossfightfunctions import lefttunnel
+from bossfightfunctions import lefttunnel, bossfight1
 
 #hitpoints
 player_hitpoints = 100
@@ -38,14 +38,18 @@ else:
        lefttunnel()
 
 
-#Here I set variables for when you will use your weapons special ability
-#Ice burst
-#Fire Ball
-#Moon Fire
-#Star Fall
-#Bladestorm
-#Rend
+#Gruulies defeated now to boss!
+print ("Are you ready to fight Gruul the Dragonslayer?")
+readycheck = input("Answer Yes or No:")
 
-#print ("Are you ready to fight Gruul the Dragonslayer")
-#readycheck = input("Answer Yes or No")
-#if readycheck == 'Yes':
+if armor_color == 'Pink':
+       print("Gruul laughs at", name,armor_color, "armor", "and smacks all the", armor_color, "armor off of", name)
+       time.sleep(2)
+       print("Gruul kills you game over!")
+
+elif readycheck == 'Yes':
+       bossfight1()
+else:
+       print("To bad Gruul doesn't care, he smashes you in the face and you die!")
+       time.sleep(2)
+       print("GAME OVER!")
