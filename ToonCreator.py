@@ -107,7 +107,7 @@ if class_choice == 'Mage':
     time.sleep(4)
     print("The following are special abilities for the Wand Weapon:")
     time.sleep(4)
-    print("Ice burst, Which cast a huge ice burst against all enemies for 80 hit points")
+    print("Ice Burst, Which cast a huge ice burst against all enemies for 80 hit points")
     time.sleep(4)
     print("Fire Ball, Which cast an gigantic fire ball against one enemy for 100 hit points")
     time.sleep(4)
