@@ -1,5 +1,5 @@
 name = 'Cherise'
-race_choice = 'Orc'
+race_choice = 'Night Elf'
 class_choice = 'Mage'
 armor_color = 'Blue'
 armor_choice = 'Plate'
